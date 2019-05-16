@@ -1,10 +1,11 @@
 {
     "name": "magroski/wt",
-    "description": "A library to handle time and date interval",
+    "description": "A library to quickly encode/decode web tokens",
     "type": "library",
     "keywords": [
-        "Time",
-        "Date Interval"
+        "JWT",
+        "WT",
+        "Web Token"
     ],
     "license": "MIT",
     "authors": [
