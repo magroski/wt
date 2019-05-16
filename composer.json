@@ -1,0 +1,38 @@
+{
+    "name": "magroski/wt",
+    "description": "A library to handle time and date interval",
+    "type": "library",
+    "keywords": [
+        "Time",
+        "Date Interval"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Magroski",
+            "email": "magroski@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WT\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WT\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "phpstan/phpstan": "^0.10.0",
+        "object-calisthenics/phpcs-calisthenics-rules": "^3.1",
+        "roave/security-advisories": "dev-master",
+        "slevomat/coding-standard": "4.5",
+        "squizlabs/php_codesniffer": "*"
+    }
+}
