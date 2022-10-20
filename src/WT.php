@@ -74,12 +74,12 @@ class WT
 
         $base64Decode = base64_decode($token);
         if ($base64Decode === false) {
-            throw new\RuntimeException('Failed to decode data');
+            throw new \RuntimeException('Failed to decode data');
         }
 
         $opensslDecrypt = openssl_decrypt($base64Decode, $this->cypherMethod, $key, 0, $iv);
         if ($opensslDecrypt === false) {
-            throw new \RuntimeException('Failed to decrypt data');
+            return null;
         }
 
         return json_decode($opensslDecrypt);

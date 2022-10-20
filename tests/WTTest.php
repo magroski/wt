@@ -56,9 +56,8 @@ class WTTest extends TestCase
 
         $this->assertIsString($token);
 
-        $this->expectException(\RuntimeException::class);
-        $this->expectExceptionMessage('Failed to decrypt data');
-        $wt->decode($token, 'batata');
+        $content = $wt->decode($token, 'batata');
+        $this->assertNull($content);
     }
 
     public function testShouldNotEncodeWithMissingKey() : void
